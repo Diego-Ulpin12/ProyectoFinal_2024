@@ -1,7 +1,7 @@
 <!doctype html>
 <html lang="en">
   <head>
-    <title>Login</title>
+    <title>Title</title>
     <!-- Required meta tags -->
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
@@ -10,14 +10,15 @@
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
   </head>
   <body>
+    <?php require_once "header.php" ?>
     <div class="container">
         <div class="row">
             <div class="col-12">
-                <h1>Registro</h1>
-                <form action="procesar.php" method="POST" enctype="multipart/form-data">
+                <h1>Inicio de sesion</h1>
+                <form action="proc_log.php" method="POST" enctype="multipart/form-data">
                     <div class="mb-3">
-                        <label for="nombre" class="form-label">Nombre de Usuario o Email</label>
-                        <input type="text" class="form-control" id="nombre" name="nombre">
+                        <label for="email" class="form-label">Email</label>
+                        <input type="text" class="form-control" id="email" name="email">
                     </div>
 
                     <div class="mb-3">
@@ -25,7 +26,7 @@
                         <input type="text" class="form-control" id="contraseña" name="contraseña">
                     </div>
 
-                    <button type="submit" class="btn btn-primary">Iniciar</button>
+                    <button type="submit" class="btn btn-primary">Iniciar sesion</button>
                 </form>
             </div>
         </div>
