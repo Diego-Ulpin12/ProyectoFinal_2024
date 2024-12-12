@@ -31,7 +31,7 @@ CREATE TABLE `registro` (
   `id_usuario` int(11) NOT NULL,
   `nombre` varchar(50) NOT NULL,
   `email` varchar(100) NOT NULL,
-  `contraseña` varchar(100) NOT NULL,
+  `password` varchar(100) NOT NULL,
   `fec_reg` date NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
 

@@ -20,17 +20,17 @@
                 <form action="procesar.php" method="POST" enctype="multipart/form-data">
                     <div class="mb-3">
                         <label for="nombre" class="form-label">Nombre de Usuario</label>
-                        <input type="text" class="form-control" id="nombre" name="nombre">
+                        <input type="text" class="form-control" id="nombre" name="nombre" required>
                     </div>
 
                     <div class="mb-3">
                         <label for="email" class="form-label">Email</label>
-                        <input type="text" class="form-control" id="email" name="email">
+                        <input type="email" class="form-control" id="email" name="email" required>
                     </div>
 
                     <div class="mb-3">
                         <label for="contraseña" class="form-label">Contraseña</label>
-                        <input type="text" class="form-control" id="contraseña" name="contraseña">
+                        <input type="text" class="form-control" id="password" name="password" required>
                     </div>
 
                     <button class="btn btn-danger">Enviar</button>
