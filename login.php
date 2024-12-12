@@ -17,14 +17,14 @@
         <div class="row">
             <div class="col-12">
                 <h1>Inicio de sesion</h1>
-                <form action="proc_log.php" method="POST" enctype="multipart/form-data">
+                <form action="procesar_login.php" method="POST" enctype="multipart/form-data">
                     <div class="mb-3">
                         <label type="mail" for="email" class="form-label">Email</label>
                         <input type="email" class="form-control" id="email" name="email" required>
                     </div>
 
                     <div class="mb-3">
-                        <label for="contraseña" class="form-label">Contraseña</label>
+                        <label for="password" class="form-label">Contraseña</label>
                         <input type="text" class="form-control" id="password" name="password" required>
                     </div>
 
