@@ -8,7 +8,7 @@
 </head>
 <body class="bg-dark text-white">
     <main class="vh-100">
-    <?php require_once "navbar.php" ?>
+    <?php require_once "navbar.php"; ?>
       <div class="container-fluid mx-auto w-50">
         <div class="row text-center mt-5">
             <header>

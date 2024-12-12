@@ -10,7 +10,7 @@ $conn = mysqli_connect($db_host, $db_user, $db_pass, $db_name);
 // Verificar conexion
 if(!$conn){
     die("Conexion fallida: " . mysqli_connect_errno());
-    echo "a";
+    printr($conn);
 };
 
 ?>
