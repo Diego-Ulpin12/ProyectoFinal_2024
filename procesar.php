@@ -9,7 +9,7 @@ $password = $_POST["password"];
 
 function insertar_registro($conn, $nombre, $email, $password)
 {
-    $sql = "INSERT INTO registro(nombre,email,password) 
+    $sql = "INSERT INTO `registro`( `nombre`, `email`, `password`) 
             VALUES ('$nombre','$email',$password)";
     $resultado = mysqli_query($conn, $sql);
 };
