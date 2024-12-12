@@ -1,15 +1,16 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
   <head>
-    <title>Title</title>
-    <!-- Required meta tags -->
     <meta charset="utf-8">
+    <title>Inicio de sesión</title>
+
+    
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="css/bootstrap.css">
   </head>
-  <body>
+  <body class="bg-dark text-white">
     <?php require_once "header.php" ?>
     <div class="container">
         <div class="row">
@@ -31,8 +32,7 @@
             </div>
         </div>
     </div>
-    <!-- Optional JavaScript -->
-    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+   
     <script src="js/bootstrap.js"></script>
   </body>
 </html>

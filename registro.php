@@ -9,7 +9,7 @@
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="css/bootstrap.css">
   </head>
-  <body>
+  <body class="bg-dark text-white">
     <div class="container">
         <div class="row">
             <div class="col-12">

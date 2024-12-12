@@ -7,7 +7,7 @@
     <title>Inicio Poke Wiki</title>
     <link rel="stylesheet" href="css/bootstrap.css">
 </head>
-<body class="bg-dark text-white ">
+<body class="bg-dark text-white">
     <main class="vh-100">
     <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
     <div class="container-fluid">
