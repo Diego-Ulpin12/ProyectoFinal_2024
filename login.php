@@ -11,7 +11,8 @@
     <link rel="stylesheet" href="css/bootstrap.css">
   </head>
   <body class="bg-dark text-white">
-    <?php require_once "header.php" ?>
+  <main class="vh-100">
+  <?php require_once "navbar.php" ?>
     <div class="container">
         <div class="row">
             <div class="col-12">
@@ -32,7 +33,9 @@
             </div>
         </div>
     </div>
-   
+    
     <script src="js/bootstrap.js"></script>
+  </main>
+  <?php require_once "footer.php"?>
   </body>
 </html>

@@ -10,6 +10,9 @@
     <link rel="stylesheet" href="css/bootstrap.css">
   </head>
   <body class="bg-dark text-white">
+  
+  <main class="vh-100">
+  <?php require_once "navbar.php" ?>
     <div class="container">
         <div class="row">
             <div class="col-12">
@@ -35,8 +38,10 @@
             </div>
         </div>
     </div>
-    <!-- Optional JavaScript -->
-    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    </main>
+    
+    
+    <?php require_once "footer.php"?>
     <script src="js/bootstrap.js"></script>
   </body>
 </html>
