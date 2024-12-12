@@ -34,12 +34,12 @@
                     </div>
                    
                     <div class="mb-3">
-                        <label for="contraseña" class="form-label">Contraseña</label>
+                        <label for="password" class="form-label">Contraseña</label>
                         <input type="text" class="form-control" id="password" name="password" required>
                     </div>
 
                     <div class="mb-3">
-                        <label for="contraseña" class="form-label">Confirmar Contraseña</label>
+                        <label for="password" class="form-label">Confirmar Contraseña</label>
                         <input type="text" class="form-control" id="passwordConfirm" name="passwordConfirm" required>
                     </div>
  
