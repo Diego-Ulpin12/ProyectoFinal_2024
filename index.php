@@ -93,10 +93,9 @@
           </div>
 
             <div class="row text-center mt-5">
-                <p> En este proyecto nos 
-                    hicimos uso de la API de Pokemon 
-                    para crear una wiki que pudiera dar informacion sobre
-                    el universo de los mounstros de bolsillo
+                <p> En este proyecto, hicimos uso de la API de Pokémon 
+                    para crear una wiki que proporciona información sobre el universo de los 
+                    Pocket Monsters.
                 </p>
             </div> 
               
