@@ -3,8 +3,18 @@ function obtenerPokemonHTML($pokemonId) {
     // Sacar datos de la api
     $url = "https://pokeapi.co/api/v2/pokemon/{$pokemonId}";
 
-    // Verificar si la solicitud fue exitosa
-    $response = file_get_contents($url);
+    $ch = curl_init();
+
+    // Configurar opciones de CURL
+    curl_setopt($ch, CURLOPT_URL, $url);
+    curl_setopt($ch, CURLOPT_RETURNTRANSFER, 1);
+
+    // Ejecutar la solicitud y almacenarla
+    $response = curl_exec($ch);
+
+    // Cerrar la conexión
+    curl_close($ch);
+
     if ($response === false) {
         return "Error al obtener los datos del Pokémon.";
     }
