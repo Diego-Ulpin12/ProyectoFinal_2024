@@ -4,11 +4,17 @@ require_once "conexion.php";
 require "login.php";
 
 $email = $_POST["email"];
-$contraseña = $_POST["contraseña"];
+$password = $_POST["password"];
+if($_POST["password"]==$_POST["passwordConfirm"]){
+    continue
+}else{
+    
+}
 
-function consultar($conn, $email, $contraseña)
+
+function consultar($conn, $email, $password)
 {
-    $sql = "SELECT email, contraseña FROM registro WHERE email = '$email' AND contraseña = '$contraseña'";
+    $sql = "SELECT email, password FROM registro WHERE email = '$email' AND password = '$password'";
     $resultado = mysqli_query($conn, $sql);
 
     // Verificar si la consulta fue exitosa
@@ -28,5 +34,5 @@ consultar
 (
     $conn,
     $email,
-    $contraseña,
+    $password,
 );

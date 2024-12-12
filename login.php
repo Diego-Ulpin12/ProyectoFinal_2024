@@ -28,6 +28,8 @@
                         <input type="text" class="form-control" id="password" name="password" required>
                     </div>
 
+                  
+
                     <button class="btn btn-danger">Iniciar sesion</button>
                 </form>
             </div>
