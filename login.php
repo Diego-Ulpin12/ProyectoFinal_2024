@@ -19,7 +19,7 @@
                 <h1>Inicio de sesion</h1>
                 <form action="proc_log.php" method="POST" enctype="multipart/form-data">
                     <div class="mb-3">
-                        <label for="email" class="form-label">Email</label>
+                        <label type="mail" for="email" class="form-label">Email</label>
                         <input type="text" class="form-control" id="email" name="email">
                     </div>
 

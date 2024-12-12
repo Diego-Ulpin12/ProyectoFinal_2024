@@ -7,47 +7,46 @@
     <link rel="stylesheet" href="css/bootstrap.css">
 </head>
 <body class="bg-dark text-white">
-<main>
+<main class="vh-100">
+<?php require_once "navbar.php" ?>
+<?php require_once "cargarpokemons.php"?>
         <div class="container-fluid d-flex justify-content-center align-items-center">
             <div class="row mt-5">
                 <header class="col-12 text-center">
                     <h3>Poke Wiki - Pokemones</h3>
                 </header>
 
-                <div class="col-md-4 mb-3">
-                    <div class="card bg-secondary text-white">
-                        <img src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/1.png" class="card-img-top" alt="Bulbasaur">
-                        <div class="card-body">
-                            <h5 class="card-title">Bulbasaur</h5>
-                            <p class="card-text">Tipo: Planta/Veneno</p>
-                            <a href="pokemon-detail.html?id=1" class="btn btn-danger">Ver detalles</a>
-                        </div>
-                    </div>
-                </div>
-
-               
-                <div class="col-md-4 mb-3">
-                    <div class="card bg-secondary text-white">
-                        <img src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/2.png" class="card-img-top" alt="Ivysaur">
-                        <div class="card-body">
-                            <h5 class="card-title">Ivysaur</h5>
-                            <p class="card-text">Tipo: Planta/Veneno</p>
-                            <a href="pokemon-detail.html?id=2" class="btn btn-danger">Ver detalles</a>
-                        </div>
-                    </div>
-                </div>
-
+                
             
-                <div class="col-md-4 mb-3">
-                    <div class="card bg-secondary text-white">
-                        <img src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/3.png" class="card-img-top" alt="Venusaur">
-                        <div class="card-body">
-                            <h5 class="card-title">Venusaur</h5>
-                            <p class="card-text">Tipo: Planta/Veneno</p>
-                            <a href="pokemon-detail.html?id=3" class="btn btn-danger">Ver detalles</a>
-                        </div>
-                    </div>
-                </div>
+            <?php
+                            
+                            // Obtener el valor de 'start' de la URL (por defecto 1)
+            if (isset($_GET['start']) && $_GET['start'] > 0) {
+                $start = (int)$_GET['start'];  
+            } else {
+                $start = 1;  
+            }
+
+            // Obtener el valor de 'limit' de la URL (por defecto 15)
+            if (isset($_GET['limit']) && $_GET['limit'] > 0) {
+                $limit = (int)$_GET['limit'];  
+            } else {
+                $limit = 15;  // Si no esta usa 15
+            }
+
+            // Cargar los Pokémon desde el valor 'start' hasta el 'start + limit'
+            for ($i = $start; $i < $start + $limit; $i++) {
+                echo obtenerPokemonHTML($i);
+            }
+
+            ?>
+
+            <!-- Botones para cargar más Pokémones -->
+            <div class="col-12 text-center mt-4">
+                <a href="?start=<?php echo $start + $limit; ?>&limit=15" class="btn btn-danger">Más Pokémon</a>
+                <a href="?start=<?php echo $start + $limit; ?>&limit=55" class="btn btn-danger">Muchos más Pokémon</a>
+            </div>
+                
 
                 
             </div>
