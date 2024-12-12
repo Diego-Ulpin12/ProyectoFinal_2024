@@ -33,7 +33,28 @@
             <a class="nav-link" href="#">Contacto</a>
           </li>
         </ul>
+      </div>
+    </div>
+    En este proyecto nos hicimos uso de la API de Pokemon para crear una wiki que pudiera dar informacion sobre el universo de los monstrous de bolsillo
+    <div class="container">
+      <div class="row">
+        <div class="col-6">
+          <div class="card" style="width: 18rem;">
+            <img src="..." class="card-img-top" alt="...">
+            <div class="card-body">
+              <h5 class="card-title">Diego Ulpin</h5>
+            </div>
+          </div>
         </div>
+        <div class="col-6">
+          <div class="card" style="width: 18rem;">
+            <img src="..." class="card-img-top" alt="...">
+            <div class="card-body">
+              <h5 class="card-title">Bryan Cardenas</h5>
+            </div>
+          </div>
+        </div>
+      </div>
     </div>
   </nav>
       <div class="container-fluid mx-auto w-50">
