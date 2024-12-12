@@ -7,7 +7,7 @@
     <link rel="stylesheet" href="css/bootstrap.css">
 </head>
 <body class="bg-dark text-white">
-<main class="vh-100">
+<main >
 <?php require_once "navbar.php" ?>
 <?php require_once "cargarpokemons.php"?>
         <div class="container-fluid d-flex justify-content-center align-items-center">
@@ -53,6 +53,8 @@
         </div>
     </main>
 
+    <br>
+    <?php require_once "footer.php"?>
     <script src="js/bootstrap.js"></script>
 </body>
 </html>
