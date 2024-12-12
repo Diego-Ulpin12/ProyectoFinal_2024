@@ -5,11 +5,6 @@ require "login.php";
 
 $email = $_POST["email"];
 $password = $_POST["password"];
-if($_POST["password"]==$_POST["passwordConfirm"]){
-    continue
-}else{
-    
-}
 
 
 function consultar($conn, $email, $password)
