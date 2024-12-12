@@ -36,7 +36,7 @@
           <div class="col-6">
               <div class="card">
 
-                  <img src="https://lh3.googleusercontent.com/a/ACg8ocIuDs2wxgYzpXRIwSiIvqR8ABEH1eAhhTbwhpAUj2JHbGBrffEL=s288-c-no" class="card-img-top" alt="foto de Diego Ulpin">
+                  <img src="Diego.png" class="card-img-top" alt="foto de Diego Ulpin">
 
                   <div class="card-body">
                     <h5 class="card-title">Diego Ulpin</h5>
