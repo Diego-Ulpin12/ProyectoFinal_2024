@@ -28,7 +28,7 @@
                         <input type="text" class="form-control" id="contraseña" name="contraseña">
                     </div>
 
-                    <button type="submit" class="btn btn-primary">Iniciar sesion</button>
+                    <button class="btn btn-danger">Iniciar sesion</button>
                 </form>
             </div>
         </div>
