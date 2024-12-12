@@ -48,7 +48,7 @@
           <div class="col-6">
               <div class="card" >
 
-                  <img src="..." class="card-img-top" alt="foto de Bryan Cardenas">
+                  <img src="bryan.jpg" class="card-img-top" alt="foto de Bryan Cardenas">
 
                   <div class="card-body">
                     <h5 class="card-title">Bryan Cardenas</h5>
